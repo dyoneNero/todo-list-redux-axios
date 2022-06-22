@@ -1,0 +1,22 @@
+.header{
+  min-width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #243b69;
+  &__button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 20px;
+    color: #243b69;
+    background-color: #69b5d2;
+  }
+}
+
+.container{
+  min-width: 100%;
+  padding: 25px 200px;
+  display: flex;
+  justify-content: space-between;
+}

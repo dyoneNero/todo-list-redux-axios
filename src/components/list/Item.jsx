@@ -1,0 +1,28 @@
+import React, {useState} from 'react';
+import "./list.scss"
+import {useDispatch} from "react-redux";
+import {removeTodo, toggleComplete} from "../../store/todoSlice";
+
+const Item = (props) => {
+
+    const [completed, setCompleted] = useState()
+    const dispatch = useDispatch()
+
+    if (props.text.length >= 1){
+        return (
+            <li>
+                <input type="checkbox" onChange={() => dispatch(toggleComplete())}/>
+                <span>{props.username}</span>
+                <span>{props.email}</span>
+                <span>{props.text}</span>
+                <div>
+                    <svg fill="red" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 20 20">
+                        <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/>
+                    </svg>
+                </div>
+            </li>
+        );
+    }
+};
+
+export default Item;
