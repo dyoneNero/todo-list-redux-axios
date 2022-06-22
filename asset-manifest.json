@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-list-redux-axios/static/css/main.ff854db7.css",
+    "main.js": "/todo-list-redux-axios/static/js/main.b565d4c9.js",
+    "index.html": "/todo-list-redux-axios/index.html",
+    "main.ff854db7.css.map": "/todo-list-redux-axios/static/css/main.ff854db7.css.map",
+    "main.b565d4c9.js.map": "/todo-list-redux-axios/static/js/main.b565d4c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff854db7.css",
+    "static/js/main.b565d4c9.js"
+  ]
+}
